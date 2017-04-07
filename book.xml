@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+   <book id="00001">
+      <bookname>Java程序设计</bookname>
+      <author>张三</author>
+      <publisher>电子工业出版社</publisher>
+      <price>33</price>
+   </book>
+</books>
