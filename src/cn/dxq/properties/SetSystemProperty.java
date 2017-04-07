@@ -1,4 +1,4 @@
-package cn.dxq.demo;
+package cn.dxq.properties;
 /**  
 * 实现对Java配置文件Properties的读取、写入与更新操作  
 */     

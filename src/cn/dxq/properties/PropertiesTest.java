@@ -1,4 +1,4 @@
-package cn.dxq.demo;
+package cn.dxq.properties;
 
 import java.util.ResourceBundle;
 
