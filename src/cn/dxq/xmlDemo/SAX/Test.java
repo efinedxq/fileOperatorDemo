@@ -41,6 +41,7 @@ public class Test {
 			SAXParser parser = saxF.newSAXParser();
 			BookHandler handler = new BookHandler();
 			parser.parse("book.xml",handler);
+			
 			List<Book> books = handler.getBooks();
 			for(Book temp:books){
 				System.out.println(temp.toString());

@@ -19,7 +19,7 @@ public class BookHandler extends DefaultHandler {
 	public void characters(char[] ch, int start, int length)
 			throws SAXException {
 //		System.out.println("Parsing content of "+element);
-		System.out.println("Parsing content of "+elementStack.peek().toString());
+//		System.out.println("Parsing content of "+elementStack.peek().toString());
 		String content=new StringBuffer().append(ch,start,length).toString().trim();
 		if(content.length()==0)
 			return ;
@@ -43,7 +43,7 @@ public class BookHandler extends DefaultHandler {
 			books.add(temp);
 		}
 //		System.out.println("Ending parsing tag "+element);
-		System.out.println("Ending parsing tag "+elementStack.peek().toString());
+//		System.out.println("Ending parsing tag "+elementStack.peek().toString());
 		elementStack.pop();
 	}
 
@@ -61,7 +61,7 @@ public class BookHandler extends DefaultHandler {
 			//			element = name;
 			elementStack.push(name);
 //		System.out.println("Begining parsing tag "+element);
-		System.out.println("Begining parsing tag "+elementStack.peek().toString());
+//		System.out.println("Begining parsing tag "+elementStack.peek().toString());
 	}
 
 	public List<Book> getBooks() {
